@@ -1,0 +1,761 @@
+*, *::before, *::after {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+body {	
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-color: #fff;
+	font-size: 18px;
+	font-family: Roboto Regular, Myriad Pro;	
+}
+
+.shadow-box{
+		-moz-box-shadow: -1px 1px 3px 2px rgba(105,105,105, .7);	
+		-webkit-box-shadow: -1px 1px 3px 2px rgba(105,105,105, .7);	
+		box-shadow: -1px 1px 3px 2px rgba(105,105,105, .7);	
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px; 
+		margin: 10px 3px;
+}
+
+.wrap{	
+	width: 100%;	
+  	display: block; 
+  	position: relative;   	
+}
+
+.wrap::after, .models-container::after, .container::after, .resize-container::after, .right-col::after{
+	content: "";
+	display: block;
+	clear: both;	
+}
+
+body, .wrap{
+	padding: 0;
+	margin: 0;
+}
+
+header{	
+	width: 100%;	
+	height: 100px;	
+	position: fixed;
+	z-index: 1000;
+}
+
+header, nav{
+	background: rgba(0, 0, 0, .5);	
+}
+
+header a{
+	color: #fff;
+}
+
+.logo{
+	display: block;
+	float: left;	
+	padding: 20px 0;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -10px 0px; 
+	width: 130px; 
+	height: 90px;
+}
+
+nav{
+	display: none;
+	position: absolute;
+	top: 100px;	
+	border: 3px dotted #fff;
+}
+
+nav a{
+	display: block;
+	padding: 5px;
+	border-bottom: 1px dotted #fff;
+}
+
+nav, nav a{
+	width: 100%;
+}
+
+#nav-bar-btn{
+	float: right;
+	height: 37px;
+	width: 50px;
+	cursor: pointer;
+	background: transparent;
+	margin: 16px 2%;
+	outline-style: none;
+	border: 2px #fff dotted;
+	border-radius: 5px;
+}
+
+#nav-bar-btn span{
+	display: block;
+	width: 35px;	
+	margin: 4px 0;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.container{
+	margin: 0 auto;	
+	max-width: 1200px;
+	width: 95%;		
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+}
+
+.arrow-down{
+	display: block;
+}
+
+.slide{
+	position: relative;
+}
+
+.slide-caption{
+	display: none;
+}
+
+.bg{
+	background-color: #f0f3f0;
+}
+
+.bgcon{
+	background-color: #fff;
+}
+
+#left{
+	left: 0;	
+	padding-left: 30px;
+}
+
+#right{
+	right: 0;	
+	padding-right: 30px;
+}
+
+
+.benefits{
+	width: 100%;
+}
+
+.benefits div{
+	height: 130px;
+	margin: 30px 0;
+}
+
+.benefits div *{
+	float: left;
+}
+
+.benefits div p{	
+	height: auto;
+	max-width: 700px;
+	width: 75%;
+	margin: 0;
+	padding: 0 10px;	
+}
+
+.benefits div img{
+	max-width: 128px;
+	max-height: 128px;
+	width: 25%;
+	height: auto;
+	padding: 10px;
+	border: 5px solid yellow;
+	border-radius: 50%;
+}
+
+.pic-box{
+	float: left;
+	overflow: hidden;
+	margin: 0;	
+	max-width: 900px;
+	width: 100%;
+}
+
+.pic{
+	margin: 0;
+	width: 100%;
+	height: auto;
+	max-width: 900px;	
+}
+
+.pop-models{
+	text-align: center;
+	font-size: 30px;
+	text-decoration: underline;	
+}
+
+.model{
+	width: 100%;
+	height: auto;	
+	padding: 15px 30px;	
+}
+
+
+.model a{
+	color: #33b401;
+}
+
+.title_model{
+	display: block;
+	margin: 20px 0 0 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.title_model img, .model img{
+	width: 100%;
+	height: auto;
+}
+
+.title_model img{
+	max-width: 180px;
+}
+
+.model img{
+	max-width: 200px;	
+}
+
+.model li{
+	list-style: none;
+}
+
+.more-btn{
+	background: #efec0e;
+	padding: 10px;
+	border-radius: 5px; 
+	display: block;
+	text-align: center;
+	color: #33b401;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-shadow: 0 3px 5px rgba(105,105,105, .7);	
+	-moz-box-shadow: 0 3px 5px rgba(105,105,105, .7);	
+	-webkit-box-shadow: 0 3px 5px rgba(105,105,105, .7);
+
+}
+
+.more-btn:hover{
+	box-shadow: 0 10px 10px rgba(105,105,105, .7);	
+	-moz-box-shadow: 0 10px 10px rgba(105,105,105, .7);	
+	-webkit-box-shadow: 0 10px 10px rgba(105,105,105, .7);		
+}
+
+footer{
+	width: 100%;
+	height: 200px;
+	background: rgba(0, 0, 0, .8);	
+	box-shadow: inset 0 0 5px 3px rgba(105,105,105, .7);	
+}
+
+footer .container:first-child{
+	padding: 10px;
+}
+
+footer p{
+	color: #fff;
+}
+
+.rights, .social_networks{
+	text-align: center;
+}
+
+.social_networks a{
+	margin: 0 10px;
+	width: 64px;
+	height: 64px;
+}
+
+.social_networks a::before{
+	transition: 2s;
+	color: #33b401;
+	font-size: 45px;
+	margin: 0;
+}
+
+.social_networks a:hover::before{
+	color: #efec0e;
+	-webkit-transform: rotate(360deg);
+  	transform: rotate(360deg);
+}
+
+/* batteries page */
+.left-col{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+
+.left-col::before{
+	content: "";
+	display: block;
+	height: 180px;	
+}
+
+.left-col h4, .map-head, .contact-head, .shares-head{
+	font-size: 24px;
+	color: #33b401;
+	margin: 20px 0 40px 130px;
+	position: relative;
+}
+
+.left-col h4::before, .map-head::before, .contact-head::before, .shares-head::before{
+	content: "";
+	display: block;	
+	width: 128px; 
+	height: 128px;
+	position: absolute;
+	top: -70px;
+	left: -130px;
+	border-bottom: 10px solid yellow;	
+}
+
+.left-col h4::before{
+	background: url(../img/sprite.png);
+	background-position: -10px -100px; 
+}
+
+.left-col p {
+	margin-top: 30px;
+}
+
+.left-col ul li, .model ul li{
+	list-style: none;
+	margin: 15px 0;
+}
+
+.left-col ul li::before, .model ul li::before{
+	color: #33b401;
+	margin: 0 10px 0 0;
+}
+
+.model ul li::before{
+	position: absolute;
+	left: -25px;
+}
+
+.model ul{
+	padding: 0;
+	position: relative;
+}
+
+
+.item img{
+	max-width: 300px;
+	width: 95%;
+	height: auto;	
+}
+
+.item a{
+	display: block;
+}
+
+.gallery:hover::before{
+	content:"Переглянути детальніше";
+	color: #efec0e;
+	background: rgba(51, 180, 1, .8);
+	padding: 2% 15%;
+}
+
+.gallery:hover::after{
+	content:"";		
+	margin: 10% 35%;
+	background: url(../img/sprite.png) no-repeat;
+	background-position: -10px -2301px;		
+	height: 64px;
+}
+
+/*shares page*/
+
+.shares-head::before{	
+	background: url(../img/sprite.png);
+	background-position: -10px -2175px; 	
+}
+
+.shares-box{
+	max-width: 1190px;
+	width: 100%;
+	margin: 20px 5px;
+}
+
+.share{
+	width: 90%;
+	max-width: 350px;
+	margin: 20px;
+	padding: 20px;
+	background: rgba(51, 180, 1, .57);
+	border: 2px solid yellow;
+	position: relative;	
+	transition: 1.5s;
+}
+
+.share:hover{
+	-moz-box-shadow: 0 0 100px #33b401;
+	-webkit-box-shadow: 0 0 100px #33b401;
+	box-shadow: 0 0 100px #33b401;	
+}
+
+.share-num, .share-name{
+	color: #33b401;
+	display: block;
+	float: left;	
+	position: absolute;
+	padding: 20px 25px;	
+}
+
+.share-num{	
+	background: rgba(239, 236, 14, .9);
+	margin: 1px;
+	top: 0;	
+	left: 0;
+}
+
+.share-name{
+	background: rgba(239, 236, 14, .7);
+	max-width: 305px;
+	width: 76%;
+	left: 60px;	
+	top: -21px;
+	text-align: center;	
+	display: block;
+}
+
+.share-info{
+	padding: 0;
+}
+
+.share-info li{
+	line-height: 70px;
+	border-bottom: 2px solid yellow;
+}
+
+.share-info::before{
+	content: "";
+	display: block;
+	height: 35px;
+}
+
+.share a{
+	font-weight: bold;
+	color: #33b401;
+	margin: 58px;
+}
+
+/* map page */
+
+.charge-map{
+	margin: 20px 0 0 0;
+	max-width: 1190px;
+	width: 100%;
+	height: 600px;
+}
+
+.map-head::before{
+	background: url(../img/sprite.png);
+	background-position: -10px -920px; 
+}
+
+/*contact page*/
+
+.contact-head::before{
+	background: url(../img/sprite.png);
+	background-position: -10px -785px; 
+}
+
+.contact-map, .contact-text{
+	max-width: 900px;	
+	width: 100%;
+}
+
+.contact-map{
+	height: 300px;	
+	border: 10px #33b401 solid;
+}
+
+.contact-text{
+	margin: 10px 0;
+}
+
+.contact-text p{
+	margin: 10px 0;
+}
+
+.contact-icon{
+	display: block;
+}
+
+.contact-icon::before{
+	color: #33b401;
+	font-size: 20px;
+	margin: 0 10px;
+}
+
+.sendform{	
+	height: auto;
+	display: block;	
+	padding: 15px;
+}
+
+.sendform p{
+	text-align: center;
+}
+
+.sendform input, .sendform textarea{
+	width: 95%;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	border-bottom: 3px solid grey;
+	display: block;
+}
+
+.sendform input{
+	height: 30px;
+}
+
+.sendform textarea{
+	height: 70px;
+}
+
+.sendform label, .sendform input, .sendform textarea{
+	margin: 10px 0 30px 0;
+}
+
+.sendform button{
+	margin: 30px 0;
+	display: inline;
+	cursor: pointer;
+	outline: none;		
+}
+
+.reset-btn{
+	float: right;
+	background: #FF3300;
+}
+
+.reset-btn:hover{
+	background: #FF9900;
+	color: #FF0000;
+}
+
+@media screen and (min-width: 400px){
+	.share-name{
+		width: 83%;
+	}
+	
+	.contact-map{
+		height: 600px;
+	}
+
+}
+
+
+@media screen and (min-width: 520px){
+	.rights{
+		float: left;
+	}
+
+	.social_networks{
+		float: right;
+	}
+
+	.share{
+		margin: 20px 100px;		
+	}
+
+}
+
+
+@media screen and (min-width: 768px){
+	header{
+		height: 130px;
+	}
+
+	.logo{
+		padding: 25px 0;
+		margin-top: 25px;
+	}
+
+	#nav-bar-btn{
+		display: none;
+	}
+
+	nav{
+		display: block;
+		border: none;
+		top: 0;
+		left: 150px;
+		background: transparent;
+	}	
+
+	nav a{
+		border: none;
+		display: block;
+		float: left;
+		width: auto;
+		font-size: 20px;
+		padding: 50px 0;
+		margin: 0 5px;
+	}
+
+	nav a:hover{
+		color: #33b401;
+		background: rgba(105,105,105, .8);
+	}
+
+	.flaticon-navigate2{
+	width: 64px;
+	height: 64px;
+	position: absolute;		
+	left: 45%; 
+	z-index: 101;
+	margin: 46% 0 0 0;
+	padding: 5%;
+	}
+
+	.flaticon-navigate2::before{
+	color: #fff;
+	font-size: 50px;
+	margin: 0;	
+	}
+
+	.slide-caption{
+		display: block;
+		position: absolute;
+		top: 45%;
+		left: 30%;
+		z-index: 17;
+		color: #fff;
+		font-size: 60px;
+	}
+
+	.slide-caption::after{
+		content: "Tesla motors";
+		font-size: 20px;
+		background: #000;
+		position: relative;	
+		top: 0;
+	}
+
+	.models-container{
+		width: 100%;		
+	}
+
+	.title_model:hover p, .title_model:hover img{	
+	height: auto;
+	max-width: inherit;
+	width: 110%;
+	font-size: 25px;
+	}
+	
+
+	.model{
+		width: 24%;
+		height: auto;		
+		float: left;
+	}
+
+	.contact{
+		width: 50%;
+		float: right;
+	}
+
+	.contact-map{
+		height: 460px;
+	}
+
+	.sendform{
+		width: 48%;		
+		float: left;
+	}
+
+	.share{
+		float: left;
+		width: 100%;			
+	}
+
+}
+
+@media screen and (min-width: 960px){
+	nav{
+		left: 200px;		
+	}	
+
+	nav a{
+		padding: 50px 10px;		
+	}
+
+	.flaticon-navigate2{
+		margin: 42% 0 0 0;		
+	}
+
+	.benefits{
+		float: right;
+		max-width: 700px;
+		width: 45%;		
+		padding: 0 0 88px 0;
+	}
+
+	.pic-box{		
+		width: 55%;
+	}
+
+	.pic{
+		width: 650px;
+	}
+
+	.benefits div{
+		margin: 30px 5px;
+		width: 47%;
+		float: left;
+	}
+
+	.benefits div img{
+		width: 40%;
+	}
+
+	.benefits div p{	
+		width: 50%;	
+		font-size: 14px;
+	}
+
+	.gallery:hover::before, .gallery:hover::after{	
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 95%;
+		height: 98%;	
+	}
+
+	.contact-map{
+		height: 505px;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	.benefits div img{
+		width: 40%;
+	}
+
+	.benefits div p{	
+		width: 110%;	
+	}
+}
+
+
+
